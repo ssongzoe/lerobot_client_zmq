@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot-client-zmq"
+version = "0.1.0"
+description = "Asynchronous ZMQ inference client for LeRobot 0.7.x"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "lerobot>=0.7.0,<0.8.0",
+    "numpy",
+    "torch",
+    "msgpack",
+    "pyzmq",
+]
+
+[project.optional-dependencies]
+plot = [
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lerobot_client_zmq*"]

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Logs
+logs/
+outputs/
+*.log
+observations_*.jsonl
+raw_actions_*.jsonl
+final_actions_*.jsonl
+action_queue_states.png
+
+# Temporary simulation files
+lerobot_client_zmq/rollout_test.py
+lerobot_client_zmq/config_test.py
+*.py.bak
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+*~
